@@ -1,0 +1,14 @@
+<?php
+
+use Drupal\google_sheets_api\Service\GoogleSheetsApiService;
+
+/**
+ * Cron job needs to be discovered in the Drupal UI
+ * (admin/config/system/cron/jobs > Discover jobs)
+ * and configured (set frequency of execution).
+ */
+function google_sheets_api_cron() {
+    // Sync Data From Google Sheets
+    $googleSheetsApiService = new GoogleSheetsApiService();
+    $googleSheetsApiService->syncData();
+}

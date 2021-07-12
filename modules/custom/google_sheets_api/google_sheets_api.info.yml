@@ -1,0 +1,6 @@
+name: Google Sheets API
+description: Functionality for fetching and storing Google Sheets data with a timed cron job.
+package: Custom
+type: module
+version: 1.0
+core_version_requirement: ^8.8
